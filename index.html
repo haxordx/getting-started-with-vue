@@ -9,11 +9,10 @@
 <body>
 
     <div id="counter">
-        Counter: {{ number }}
 
-        <span v-bind:title="message">
-            Hover your mouse over me for a few seconds to see my dynamically bound
-            title!
+        <span>
+            <button v-on:click="reverseMessage">Reverse Message</button>
+
         </span>
 
     </div>
@@ -23,14 +22,7 @@
         const Counter = {
             data() {
                 return {
-                    message: 'You loaded this page on ' + new Date().toLocaleString(),
-                    number: 0
                 }
-            },
-            mounted() {
-                setInterval(() => {
-                    this.number++
-                }, 1000)
             }
         }
 
