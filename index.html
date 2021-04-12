@@ -16,10 +16,12 @@
         <h1>
             {{message}}
         </h1>
+
         <br />
+        <button v-on:click="reverseMessage">Reverse Message</button>
 
         <div v-if="message.length > 0">
-            <button v-on:click="reverseMessage">Reverse Message</button>
+            <input v-model="message">
         </div>
 
     </div>
