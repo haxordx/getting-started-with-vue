@@ -19,7 +19,10 @@
         <button v-on:click="reverseMessage">Reverse Message</button>
 
         <br />
-        <input v-model="message">
+
+        <div v-if="message.length > 0">
+            <input v-model="message">
+        </div>
 
     </div>
 
