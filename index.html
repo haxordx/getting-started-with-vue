@@ -54,6 +54,11 @@
                         .split('')
                         .reverse()
                         .join('')
+                },
+                addListItem() {
+                    this.todos.push({
+                        text: this.message
+                    });
                 }
             }
         }
