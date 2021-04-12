@@ -38,7 +38,13 @@
         const Counter = {
             data() {
                 return {
-                    message: 'Hello Vue.js!'
+                    message: 'Hello Vue.js!',
+
+                    todos: [
+                        { text: 'Learn JavaScript' },
+                        { text: 'Learn Vue' },
+                        { text: 'Build something awesome' }
+                    ]
                 }
             },
             methods: {
